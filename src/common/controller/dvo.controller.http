@@ -1,0 +1,21 @@
+POST  http://localhost:8084/common/dvo/query?className=common/bean/dto/user.dto
+content-type: application/json
+
+
+{
+}
+
+
+### get dvo version
+
+GET  http://localhost:8084/common/dvo/getVersion
+
+
+
+###
+
+GET http://localhost:8084/common/dvo/construct/list
+
+
+### get dvo search
+POST  http://localhost:8084/common/dvo/search?resource=OrgDVO

@@ -1,0 +1,39 @@
+
+
+# 测试组织查询
+POST  http://localhost:8084/common/stq/query?className=rbac/entity/org.entity
+content-type: application/json
+
+{
+    "name": "sample",
+    "queryConditions":[]
+}
+
+
+### 测试组织添加
+
+POST  http://localhost:8084/common/stq/insert?className=rbac/entity/org.entity
+content-type: application/json
+
+{
+    "parentOrgId":1,
+    "orgName":"123"
+}
+
+### stq delete
+
+GET  http://localhost:8084/common/stq/remove?className=rbac/entity/org.entity&key=1
+content-type: application/json
+
+
+### stq update
+
+POST http://localhost:8084/common/stq/update?className=rbac/entity/org.entity
+content-type: application/json
+
+{
+    "orgId":6,
+    "orgName":"heheda"
+} 
+
+
